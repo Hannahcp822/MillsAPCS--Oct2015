@@ -10,7 +10,13 @@ public class Equestria
     // Exercise 1... three distances (Baltimare - Manehattan, Los Pegasus - Neighagra Falls, Badlands - Ponyville)
     public static double distance(int x1,int y1,int x2,int y2)
     {
-        return Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+        // find distance using distance formula
+        double distance = (Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))*100;
+        
+        // round distance to two decimal places
+        int distance2 = (int)(distance);
+        distance = (distance2)/100;
+        return distance;
     }
     
     public static void printDistances()
@@ -26,16 +32,17 @@ public class Equestria
     }
     
     // Exercise 2... length of Princess Luna's circular trip 
-    public static double circumference(int diameter)
+    public static double circumference(double diameter)
     {
         return Math.PI*diameter;
     }
     
-    public static void printCircumference()
+    public static void printCircumference(int x1,int y1,int x2,int y2)
     {
         // find length of trip using the circumference method, print this out
         
-        double lengthOfTrip = circumference(22);
+        double d = distance(x1,y1,x2,y2); 
+        double lengthOfTrip = circumference(d);
         System.out.println("Length of trip = " + lengthOfTrip);
     }
     
@@ -89,7 +96,7 @@ public class Equestria
         printDistances();
         System.out.println();
         System.out.println("Exercise #2");
-        printCircumference();
+        printCircumference(18,23,18,9);
         System.out.println();
         System.out.println("Exercise #3");
         printTourDistancesAndAngles();
