@@ -1,19 +1,19 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=658
+objectbench.width=668
 package.editor.height=400
 package.editor.width=560
-package.editor.x=83
-package.editor.y=50
+package.editor.x=11
+package.editor.y=23
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
-target1.editor.height=677
-target1.editor.width=900
-target1.editor.x=261
-target1.editor.y=39
+target1.editor.height=725
+target1.editor.width=1015
+target1.editor.x=119
+target1.editor.y=23
 target1.height=50
 target1.name=Equestria
 target1.naviview.expanded=true
