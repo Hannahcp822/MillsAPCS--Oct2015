@@ -26,6 +26,7 @@ public class Equestria
     }
     
     // Exercise 2... length of Princess Luna's circular trip 
+
     public static double circumference(double radius)
     {
         double circumference = Math.PI*radius*2;
