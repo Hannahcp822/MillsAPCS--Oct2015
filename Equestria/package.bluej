@@ -1,37 +1,19 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=668
+objectbench.width=678
 package.editor.height=400
 package.editor.width=570
 package.editor.x=29
-package.editor.y=0
+package.editor.y=23
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=725
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-target1.editor.width=1201
-target1.editor.x=61
+target1.editor.width=1015
+target1.editor.x=185
 target1.editor.y=23
-=======
-target1.editor.width=1015
-target1.editor.x=185
-target1.editor.y=29
->>>>>>> origin/master
-=======
-target1.editor.width=1015
-target1.editor.x=185
-target1.editor.y=29
->>>>>>> origin/master
-=======
-target1.editor.width=1015
-target1.editor.x=185
-target1.editor.y=29
->>>>>>> origin/master
 target1.height=50
 target1.name=Equestria
 target1.naviview.expanded=true
