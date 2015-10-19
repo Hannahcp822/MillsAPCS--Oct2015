@@ -17,28 +17,27 @@ public class Equestria
     public static void printDistances()
     {
         // find three distances using the distance method, print these out
-        double baltimareToManehattan = distance(32,15,35,8);
+        double baltimareToManehattan = distance(32,16,35,9);
         System.out.println("Distance from Baltimare to Manehattan = " + baltimareToManehattan);
         double losPegasusToNeighagraFalls = distance(7,19,23,7);
         System.out.println("Distance from Los Pegasus to Neighagra Falls = " + losPegasusToNeighagraFalls);
-        double badlandsToPonyville = distance(28,22,17,13);
+        double badlandsToPonyville = distance(28,22,17,14);
         System.out.println("Distance from Badlands to Ponyville = " + badlandsToPonyville);
     }
     
     // Exercise 2... length of Princess Luna's circular trip 
-
-    public static double circumference(double radius)
+    public static double circumference(double diameter)
     {
-        double circumference = Math.PI*radius*2;
+        double circumference = Math.PI*diameter;
         return Math.round(circumference*100.0)/100.0;
     }
     
     public static void printCircumference(int x1,int y1,int x2,int y2)
     {
         // find length of trip using the circumference method, print this out
-        double radius = distance(18,9,35,8);
-        double lengthOfTrip = circumference(radius);
-        System.out.println("Length of trip (with Canterlot-Manehattan as the radius) = " + lengthOfTrip);
+        double diameter = distance(15,8,16,23);
+        double lengthOfTrip = circumference(diameter);
+        System.out.println("Length of trip (with Cloudsdale-Macintosh Hills as the diameter) = " + lengthOfTrip);
     }
     
     // Exercise 3... Tour of 3 places, Distances and Angles b/t them (Canterlot, Manehattan, Macintosh Hills)
@@ -51,20 +50,21 @@ public class Equestria
     public static void printTourDistancesAndAngles()
     {
         // find distances between each place using the distance method, print these out
-        double a = distance(18,9,35,8); // distance Canterlot to Manehattan
-        System.out.println("Distance from Canterlot to Manehattan = " + a);
-        double b = distance(35,8,18,23); // distance Manehattan to Macintosh Hills
-        System.out.println("Distance from Manehattan to Macintosh Hills = " + b);
-        double c = distance(18,23,18,9); // distance Macintosh Hills to Canterlot
-        System.out.println("Distance from Macintosh Hills to Canterlot = " + c);
+        System.out.println("Tour stops: Canterlot, Manehattan, Macintosh Hills");
+        double a = distance(18,10,35,9); // distance Canterlot to Manehattan
+        System.out.println("  Distance from Canterlot to Manehattan = " + a);
+        double b = distance(35,9,16,23); // distance Manehattan to Macintosh Hills
+        System.out.println("  Distance from Manehattan to Macintosh Hills = " + b);
+        double c = distance(16,23,18,10); // distance Macintosh Hills to Canterlot
+        System.out.println("  Distance from Macintosh Hills to Canterlot = " + c);
         
         // find angles between each place using law of cosines and Math.acos, print these out
         double B = angle(a,b,c); // angle MacCanterMane
-        System.out.println("Angle Mac-Canter-Mane = " + B);
+        System.out.println("  Angle Mac-Canter-Mane = " + B);
         double C = angle(a,c,b); // angle CanterManeMac
-        System.out.println("Angle Canter-Mane-Mac = " + C);
+        System.out.println("  Angle Canter-Mane-Mac = " + C);
         double A = angle(c,a,b); // angle ManeMacCanter
-        System.out.println("Angle Mane-Mac-Canter = " + A);
+        System.out.println("  Angle Mane-Mac-Canter = " + A);
     }
     
     // Exercise 4... Longest distance b/t 4 places (Manehattan, Cloudsdale, Canterlot, Appleloosa)
@@ -80,11 +80,12 @@ public class Equestria
         
         // use Math.max to compare each of the distances to find the longest distance
         double maxdistance = Math.max(Math.max(Math.max(Math.max(Math.max(distManehattanToCloudsdale,distManehattanToCanterlot),
-                                                         distManehattanToAppleloosa),
-                                                distCloudsdaleToCanterlot),
-                                       distCloudsdaleToAppleloosa),
-                              distCanterlotToAppleloosa);
-        System.out.println("Longest distance between two destinations = " + maxdistance);
+                                                        distManehattanToAppleloosa),
+                                               distCloudsdaleToCanterlot),
+                                      distCloudsdaleToAppleloosa),
+                             distCanterlotToAppleloosa);
+        System.out.println("Four destinations: Manehattan, Cloudsdale, Canterlot, Appleloosa");
+        System.out.println("  Longest distance between two destinations = " + maxdistance);
     }
     
     public static void main(String[] args)
@@ -99,7 +100,7 @@ public class Equestria
         printTourDistancesAndAngles();
         System.out.println();
         System.out.println("Exercise #4");
-        longestTrip(35,8,15,7,18,9,19,20);
+        longestTrip(35,9,15,8,18,10,19,20);
     }
 }
         
