@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=console
+comment0.target=int\ promptForCount(java.util.Scanner)
+comment1.params=
+comment1.target=void\ calculations()
+comment2.params=max\ min\ maxEven\ sumOfEvens
+comment2.target=void\ printValues(int,\ int,\ int,\ int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
